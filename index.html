@@ -1,54 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stick Notes</title>
-  </head>
-  <body id="noteList">
-
-    <!------------ Notes start ------------>
-    <div class="notes">
-      <header>
-        <!-- Yellow header you can see at the top. -->
-        <button class="leftBTN"><span class="buttonSymbol">+</span></button>
-        <div class="right-group">
-          <button class="rightBTN">
-            <span class="buttonSymbol">...</span>
-          </button>
-          <button class="rightBTNx">✕</button>
-        </div>
-      </header>
-      <main>
-        <!-- Where you can input your text. -->
-        <textarea class="textInput"></textarea>
-      </main>
-      <footer> <!-- Interactive Buttons -->
-        <div>
-          <button class="bold">𝗕</button>
-          <button class="italic">𝐼</button>
-          <button class="">U̲</button>
-          <button class="">̶a̶b̶</button>
-          <button class="">
-            <i class="fa fa-list-ul" aria-hidden="true"></i>
-          </button>
-          <button class="">
-            <i class="fa fa-picture-o" aria-hidden="true"></i>
-          </button>
-        </div>
-      </footer>
-    </div>
-    <!------------ Notes end ------------>
-
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticky Notes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+  <div id="add-notes">
+    <button class="add-btn" title="Add Note">
+      <span>+</span>
+    </button>
+  </div>
+  <div id="notes-container"></div>
+  <script src="script.js"></script>
+</body>
 </html>
