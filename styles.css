@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  background: linear-gradient(135deg, #e9ecef 0%, #f7f7fa 100%);
+  background: linear-gradient(black 100%);
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
   display: flex;
@@ -43,6 +43,9 @@ body {
   justify-content: center;
   width: 100vw;
   max-width: 1200px;
+  position: absolute; 
+  top: 100px; 
+  left: 100px;
 }
 
 .note {
@@ -177,5 +180,33 @@ body {
 .note-footer button:hover {
   background: #ececec;
   color: #222;
+  opacity: 1;
+}
+
+/* Add at the end of your styles.css */
+.resize-handle {
+  width: 16px;
+  height: 16px;
+  background: rgba(0,0,0,0.08);
+  border-radius: 3px;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  cursor: se-resize;
+  z-index: 10;
+}
+.note-footer {
+  position: relative;
+}
+
+.note-footer button.active {
+  background: #ffe066 !important; /* or use the header color dynamically */
+  color: #222 !important;
+  opacity: 1;
+}
+
+.note-footer button.active {
+  background: var(--active-btn-color, #ffe066) !important;
+  color: #222 !important;
   opacity: 1;
 }
